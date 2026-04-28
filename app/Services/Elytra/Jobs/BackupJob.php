@@ -438,7 +438,7 @@ class BackupJob implements Job
     private function mapElytraAdapterToModel(string $elytraAdapter): string
     {
         return match ($elytraAdapter) {
-            'elytra', 'local' => Backup::ADAPTER_RUSTIC_LOCAL,
+            'elytra', 'local' => Backup::ADAPTER_ELYTRA,
             'rustic_local' => Backup::ADAPTER_RUSTIC_LOCAL,
             'rustic_s3' => Backup::ADAPTER_RUSTIC_S3,
             's3' => Backup::ADAPTER_RUSTIC_S3,
